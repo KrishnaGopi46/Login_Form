@@ -6,8 +6,7 @@
     }
 
 function myFunction(event){
-   
-
+   event.preventDefault();
     var name=document.getElementById("name");
     var email=document.getElementById("email");
     var password=document.getElementById("password");
@@ -20,4 +19,12 @@ function myFunction(event){
         alert("invalid");
         return false;
     }
+}
+
+function mySignupform(){
+    var login=document.getElementsByClassName("container login-form");
+    var signup=document.getElementsByClassName("container signup-form");
+
+    login.style.display="none";
+    signup.style.display="block";
 }
